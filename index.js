@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.status(200).json("Bonjour tout nous avons reliés le git à jenkins");
+  res.status(200).json("Jenkins réagit bien");
 });
 
 module.exports = app.listen(process.env.PORT || 4000, () =>
