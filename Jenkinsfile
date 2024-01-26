@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'npm test || exit 1' 
+                sh 'npm install jest;npm test || exit 1' 
             }
         }
     }
