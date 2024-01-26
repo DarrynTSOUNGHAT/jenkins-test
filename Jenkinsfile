@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'console.log("test ok")' 
+                sh 'git pull origin main' 
             }
         }
     }
